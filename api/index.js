@@ -24,7 +24,6 @@ app.use(cors());
   app.get("/nytglobal", (req, res) => {
     res.send({ nytOutput });
   });
-  console.log(nytOutput);
 
   await browser.close();
 })();
